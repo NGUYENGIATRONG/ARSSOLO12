@@ -382,7 +382,7 @@ class SpotEnv(gym.Env):
         """
 
         # Lực áp dụng
-        force_applied = [x_f, y_f, -50]
+        force_applied = [x_f, y_f, 0]
 
         # Lấy vị trí của cơ sở robot
         base_position = self._pybullet_client.getBasePositionAndOrientation(self.spot)[0]

@@ -72,7 +72,7 @@ if __name__ == '__main__':
     # Thêm biến lưu lực ngẫu nhiên và bước đếm
     step_counter = 0
     random_force = [0, 0]  # Lực ngẫu nhiên ban đầu là 0
-    force_interval = 1000  # Mỗi 30000 bước thì thay đổi lực ngẫu nhiên
+    force_interval = 100  # Mỗi 30000 bước thì thay đổi lực ngẫu nhiên
 
     for i_step in range(args.EpisodeLength):
         action = policy.dot(state)
